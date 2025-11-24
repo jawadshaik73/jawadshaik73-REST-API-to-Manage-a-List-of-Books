@@ -1,3 +1,30 @@
+# To-Do List App
+
+A simple, interactive to-do list web application built with HTML, CSS, and JavaScript. This app allows users to add, delete, and mark tasks as completed. It's fully responsive, so it works on both desktop and mobile devices.
+
+## Features
+
+- Add tasks to the list
+- Mark tasks as completed
+- Delete tasks from the list
+- Responsive design for mobile and desktop
+- Displays task statistics (total tasks and completed tasks)
+
+## Technologies Used
+
+- **HTML**: Used for the structure of the app
+- **CSS**: Used for styling the app, including responsive design
+- **JavaScript**: Used to manage the functionality (adding, deleting, completing tasks)
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/todo-app.git
+
+
 Step 1. First, create a new directory and initialize the project:
 
 "mkdir book-api"
