@@ -126,12 +126,21 @@ app.delete("/books/:id", (req, res) => {
 // ------------------------------
 // Start server
 // ------------------------------
-app.listen(PORT, () => {
-    console.log(`Book API running at http://localhost:${PORT}`);
-    console.log("Available endpoints:");
-    console.log("GET    /books");
-    console.log("GET    /books/:id");
-    console.log("POST   /books");
-    console.log("PUT    /books/:id");
-    console.log("DELETE /books/:id");
-});
+// app.listen(PORT, () => {
+//     console.log(`Book API running at http://localhost:${PORT}`);
+//     console.log("Available endpoints:");
+//     console.log("GET    /books");
+//     console.log("GET    /books/:id");
+//     console.log("POST   /books");
+//     console.log("PUT    /books/:id");
+//     console.log("DELETE /books/:id");
+// });
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(cors());
+app.use(express.json());
+
