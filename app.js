@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -69,6 +69,7 @@ app.delete("/books/:id", (req, res) => {
 });
 
 // START SERVER
-app.listen(PORT, () => {
-    console.log(`Book API is running on http://localhost:${PORT}`);
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Book API running on port ${process.env.PORT || 3000}`);
 });
+
